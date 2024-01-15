@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown</title>
+    <style>
+        :root { --colour: black; }
+        .inner { border: 1px solid var(--colour); border-top: 12px solid var(--colour); padding: 40px; background-color: white; }
+        span { /*animation: shake 0.3s infinite;*/ display: inline-block; font-size: 30px; color: var(--colour); font-family: monospace; }
+        p { display: flex; justify-content: center; align-items: center; }
+        html { height: 100vh; display: flex; justify-content: center; align-items: center;  background-color: var(--colour); background-image: url(dither.png); }
+
+
+        @keyframes shake { 0% { transform: translate(0, 0) rotate(0deg); } 25% { transform: translate(0.5px, 0.5px) rotate(5deg); } 50% { transform: translate(-0.5px, 0) rotate(0eg); } 75% { transform: translate(-0px, -0.5px) rotate(-3deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
+
+    </style>
+</head>
+<body>
+    <div class="inner"><p><span style="animation-delay: 0.1070s">7</span><span style="animation-delay: 0.2358s">5</span><span style="animation-delay: 0.1397s">.</span><span style="animation-delay: 0.0896s">8</span><span style="animation-delay: 0.1826s">%</span><span style="animation-delay: 0.0857s">:</span><span style="animation-delay: 0.2473s">⠀</span><span style="animation-delay: 0.1306s">[</span><span style="animation-delay: 0.1747s">█</span><span style="animation-delay: 0.1225s">█</span><span style="animation-delay: 0.1659s">█</span><span style="animation-delay: 0.0085s">█</span><span style="animation-delay: 0.2128s">█</span><span style="animation-delay: 0.0549s">█</span><span style="animation-delay: 0.1546s">█</span><span style="animation-delay: 0.2257s">▒</span><span style="animation-delay: 0.0162s">⠀</span><span style="animation-delay: 0.2351s">⠀</span><span style="animation-delay: 0.0923s">]</span></p></div>
+</body>
+</html>
